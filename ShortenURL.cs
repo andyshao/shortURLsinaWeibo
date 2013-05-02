@@ -19,11 +19,6 @@ namespace EPMS.Web.Helper
           string address = string.Format("http://api.t.sina.com.cn/short_url/shorten.json?source=1681459862&url_long={0}", url);
            string[] strArray = HttpUtility.UrlDecode(client.DownloadData(address), Encoding.UTF8).Split(new string[] { "\"" }, StringSplitOptions.None);
            return  strArray[3];
-
-
-
-           //OA
-
        }
     }
 }
